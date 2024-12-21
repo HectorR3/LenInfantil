@@ -1,0 +1,39 @@
+declarar miNumero como NumeroEntero
+declarar miTexto como Texto
+declarar miLista como lista
+
+miNumero = 5
+miTexto = "Hola"
+
+si miNumero igual 5 {
+    mostrar "miNumero es igual a 5"
+} sino {
+    mostrar "miNumero no es igual a 5"
+    
+}
+
+repetir 2 veces {
+    mostrar "Ciclo repetitivo"
+    si miTexto igual "Hola" {
+        mostrar "El texto es Hola"
+    }
+}
+
+mientras miNumero mayorque 0 {
+    mostrar miNumero
+    miNumero = miNumero - 1
+}
+
+funcion saludar(nombre como Texto, contador como NumeroEntero) {
+    mostrar "Hola, " + nombre
+}
+y
+saludar("Mundo",5)
+
+intentar {
+    mostrar "Bloque del Try"
+} capturar error {
+    mostrar "Error: Índice fuera de rango"
+}
+
+esperar 1
